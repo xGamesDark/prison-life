@@ -102,10 +102,7 @@ local function createGui()
             local shortest = fovRadius
             for _, player in pairs(Players:GetPlayers()) do
                 if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("Head") and player.Team ~= LocalPlayer.Team then
-                    local head = player.Character.Head
-
-Anonymous, [29/11/2025 12:58]
-local pos, onScreen = Camera:WorldToViewportPoint(head.Position)
+                    local head = player.Character.Headlocal pos, onScreen = Camera:WorldToViewportPoint(head.Position)
                     if onScreen then
                         local dist = (Vector2.new(pos.X, pos.Y) - Vector2.new(Mouse.X, Mouse.Y + 36)).Magnitude
                         if dist < shortest then
