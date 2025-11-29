@@ -1,4 +1,3 @@
-Anonymous, [29/11/2025 12:58]
 -- Aimbot by zenss555a - Fixed Nil Errors 2025 (Xeno Compatible)
 
 local Players = game:GetService("Players")
